@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet">
+  
+
+  <title>Document</title>
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" style="background-color: rgba(33, 37, 41, 0.814) !important;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo/o.png" alt="Avatar Logo" style="width: 40px" class="rounded-pill text-dark" />
+        </a>
+        <a class="navbar-brand" href="javascript:void(0)"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="javascript:void(0)">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="javascript:void(0)">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="javascript:void(0)">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="javascript:void(0)">Contact</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link mx-3 dropdown-toggle" data-bs-toggle="dropdown" href="#">Freelancing</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Remote Work</a></li>
+                        <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                        <li><a class="dropdown-item" href="#">Graphic Design</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#">Web Development</a></li>
+                        <li><a class="dropdown-item" href="#">E-Commerce</a></li>
+                        <li><a class="dropdown-item" href="#">E-Learning</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" id="Search" placeholder="Search" />
+                <button class="btn btn-outline-primary text-light ms-2" for="Search" type="button">
+                    Search
+                </button>
+                <button class="btn btn-outline-success text-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h1 class="modal-title fs-5 slide" id="exampleModalLabel">
+                  <i class="bi bi-person-circle"></i> Login Form
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"><i class="bi bi-envelope-fill"></i> Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email" />
+                      <div id="emailHelp" class="form-text">
+                          We'll never share your email with anyone else.
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"><i class="bi bi-lock-fill"></i> Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Password" />
+                  </div>
+                  <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                      <label class="form-check-label" for="flexSwitchCheckDefault">Remember me</label>
+                  </div>
+                  <button type="submit" class="btn btn-outline-primary mt-2">
+                      <i class="bi bi-box-arrow-in-right"></i> Submit
+                  </button>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                  Close
+              </button>
+              <button type="button" class="btn btn-outline-primary">
+                  <i class="bi bi-save"></i> Save changes
+              </button>
+          </div>
+      </div>
+  </div>
+</div>
+
+  <!-- ----------------- /NAV ----------------- -->
+
+
+  <aside class="me-5 content-icon">
+    <div class="container p-0 " style="position: relative; ">
+
+      <div class="d-flex flex-column justify-content-between ms-auto me-3"
+        style="position: fixed;z-index: 10;top: 200px;right:20px;">
+        <div class="aside-icon "><a href="#"><i class="fab fa-facebook-square my-2"
+              style="font-size: 48px; color: burlywood;"></i></a></div>
+        <div class="aside-icon "><a href="#"><i class="fab fa-whatsapp-square my-2"
+              style="font-size: 48px; color: burlywood;"></i></a></div>
+        <div class="aside-icon "><a href="#"><i class="fab fa-twitter-square my-2"
+              style="font-size: 48px;color: burlywood;"></i></a></div>
+        <div class="aside-icon "><a href="#"><i class="fab fa-linkedin my-2"
+              style="font-size: 48px; color: burlywood;"></i></a></div>
+        <div class="aside-icon "><a href="#"><i class="fab fa-instagram-square my-2"
+              style="font-size: 48px; color: burlywood;"></i></a></div>
+      </div>
+  </aside>
+
+  <!-- Carousel -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel" style="height: 100vh;">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators p-5 m-5">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active carousel-btn-circle m-1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="carousel-btn-circle m-1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="carousel-btn-circle m-1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3" class="carousel-btn-circle m-1"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/main/iStock-1485782941.jpg" alt="Los Angeles Jobs" class="d-block img-fluid "
+          style="width: 100%; height: 100vh;">
+        <div class="carousel-caption my-5 rounded-3 mx-auto"
+          style="background-color:rgba(21, 20, 20, 0.451); width: 70%; height:200px ;">
+          <h3 class="my-2  text-uppercase text-info ">Jobs </h3>
+          <p class="my-3 text-capitalize ">Discover amazing job opportunities in Los Angeles and start your career now!
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/main/iStock-1467035197.jpg" alt="Chicago Jobs" class="d-block img-fluid "
+          style="width: 100%; height: 100vh;">
+        <div class="carousel-caption my-5 rounded-3 mx-auto"
+          style="background-color:rgba(21, 20, 20, 0.451); width: 70%; height:200px ;">
+          <h3 class="my-2  text-uppercase text-info ">Chicago Jobs</h3>
+          <p class="my-3 text-capitalize ">Join a team of professionals in Chicago and take advantage of the available
+            job opportunities!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/main/iStock-1804010523.jpg" alt="New York Jobs" class="d-block img-fluid "
+          style="width: 100%; height: 100vh;">
+        <div class="carousel-caption my-5 rounded-3 mx-auto"
+          style="background-color:rgba(21, 20, 20, 0.451); width: 70%; height:200px ;">
+          <h3 class="my-2  text-uppercase text-info ">New York Jobs</h3>
+          <p class="my-3 text-capitalize ">Explore job opportunities in New York and achieve your career dreams in the
+            big city!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/main/customer-PWC-16x9-1.png" alt="Leading Companies Jobs" class="d-block img-fluid "
+          style="width: 100%; height: 100vh;">
+        <div class="carousel-caption my-5 rounded-3 mx-auto"
+          style="background-color:rgba(21, 20, 20, 0.451); width: 70%; height:200px ;">
+          <h3 class="my-2  text-uppercase text-info ">Leading Companies Jobs</h3>
+          <p class="my-3 text-capitalize ">Join leading global companies and benefit from exceptional job opportunities!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!--------------- /carousel ------------------->
+
+
+
+
+
+  <div class="container-fluid py-4 shadow-sm bg-dark rounded ">
+    <h2 class="text-center my-4 text-light">Guidance for Freelancing and Personal Development</h2>
+    <p class="text-light"><strong class="text-danger"> WELCOME : </strong> to our website <strong
+        class="text-danger">where we offer you </strong>valuable guidance and practical tools to embark on the world of
+      freelancing online. Whether you're seeking new opportunities for freelancing or aiming to develop your personal
+      and professional skills, we are here to assist you. Explore strategies for success in freelancing, benefit from
+      valuable tips for personal development, and embark on a bright professional future.</p>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <img src="images/svg/id-card-svgrepo-com.svg" class="mx-2 img-thumbnail  img-fluid " alt="" width="50"
+            height="50">
+          <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+            Explore Freelance Opportunities
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+            In this section, users can explore a diverse range of freelance opportunities available in the freelancing
+            market. They will find exciting projects spanning various fields and required skills.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="images/svg/achievement-business-goal-svgrepo-com.svg" class="mx-2" alt="" width="50" height="50">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+            Tips for Freelance Success
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            This section provides valuable tips and guidance from experts in the freelancing field. Users can delve into
+            the experiences of others and learn successful strategies.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="images/svg/network-group-svgrepo-com.svg" class="mx-2" alt="" width="50" height="50">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+            Build Your Professional Network
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            In this section, users have the opportunity to build their professional networks. They can connect with
+            other professionals, exchange experiences, and establish new collaborative relationships in different
+            domains.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+
+  <!--  -->
+  <div class="container py-5">
+
+    <div class="d-flex flex-column flex-md-row rounded-5 shadow-sm ">
+      <div class="d-grid col-12 col-md-6 rounded-4 py-3 ">
+        <h2 class="text-center">WELCOME TO <span class="text-info">OMTR </span><span
+            class="text-secondary">COMMUNITY</span></h2>
+        <p class="mx-3 lh-5" style="font-size: 17px;">
+          The place where inspiration and opportunities converge, where dreams meet reality. We are here to provide you
+          with a unique and comprehensive experience in the world of freelancing and emerging businesses.
+        </p>
+        <a href="#" class="btn btn-dark mx-auto border-2 text-info " style="width: 20%; height: max-content;">Learn
+          more</a>
+      </div>
+      <div class="col-12 col-md-6 p-0">
+        <img src="images/main/annie-spratt-hCb3lIB8L8E-unsplash.jpg" alt="" class="img-fluid rounded rounded-5  ">
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+
+  <div class="container-fluid py-3 mt-5  bg bg-dark  text-light text-center title-section shadow-sm ">
+    <h2 class="" style="font-size: 2.5rem;"><strong class="text-warning ">T</strong>rainee <strong
+        class="text-warning ">T</strong>estimonials</h2>
+    <div class="Post-card-line bg-light mx-auto "></div>
+  </div>
+
+  <!-- Post-card -->
+  <div class="container   mt-2">
+    <div class="card Post-card overflow-hidden my-5 Post-card-l-bg-gradint">
+      <div class="row no-gutters">
+        <div class="col-md-3">
+          <img src="images/main/iStock-1448440964.jpg" class="card-img img-fluid Post-card-img Post-card-l"
+            alt="Post Post-cardImage">
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <div class="postcard_text t-dark">
+              <h1 class="postcard_title yellow"><a href="#" class="text-decoration-none  text-muted">Podcast Title</a>
+              </h1>
+              <div class="postcard_subtitle">
+                <time datetime="2024-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mx-1"></i>Mon, june 27th 2024
+                </time>
+              </div>
+              <div class="Post-card-line bg-secondary  "></div>
+              <div class="postcard_preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                fugiat
+                asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+                accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci
+                illo
+                iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+              <ul class=" list-inline ">
+                <li class="list-inline-item m-4 btn btn-outline-secondary  "><i class="fas fa-tag mx-1"></i>Podcast</li>
+                <li class="list-inline-item m-4 btn btn-outline-secondary  "><i class="fas fa-clock mx-1"></i>55 mins.
+                </li>
+                <li class="list-inline-item m-4 btn btn-outline-secondary   play yellow">
+                  <a href="#" style="display: contents;" class="text-body "><i class="fas fa-play mx-1 "></i>Play
+                    Episode</a>
+                </li>
+              </ul>
+            </div><!-- card-body -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container   mt-2">
+    <div class="card Post-card overflow-hidden my-5">
+      <div class="row flex-row-reverse  no-gutters Post-card-r-bg-gradient">
+        <div class="col-md-3">
+          <img src="images/main/customer-PWC-16x9-1.png" class="card-img img-fluid Post-card-img Post-card-r "
+            alt="Postcard Image">
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <div class="postcard_text t-dark">
+              <h1 class="postcard_title yellow"><a href="#" class="text-decoration-none text-muted ">Podcast Title</a>
+              </h1>
+              <div class="postcard_subtitle">
+                <time datetime="2024-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mx-1"></i>Mon, june 27th 2024
+                </time>
+              </div>
+              <div class="Post-card-line bg-danger "></div>
+              <div class="postcard_preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                fugiat
+                asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+                accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci
+                illo
+                iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+              <ul class=" list-inline ">
+                <li class="list-inline-item m-4 btn btn-outline-secondary  "><i class="fas fa-tag mx-1"></i>Podcast</li>
+                <li class="list-inline-item m-4 btn btn-outline-secondary  "><i class="fas fa-clock mx-1"></i>55 mins.
+                </li>
+                <li class="list-inline-item m-4 btn btn-outline-secondary   play yellow">
+                  <a href="#" style="display: contents;" class="text-body "><i class="fas fa-play mx-1 "></i>Play
+                    Episode</a>
+                </li>
+              </ul>
+            </div><!-- card-body -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container   mt-2">
+    <div class="card Post-card overflow-hidden my-5 Post-card-l-bg-gradint">
+      <div class="row no-gutters">
+        <div class="col-md-3">
+          <img src="images/main/customer-welocalize-16x9.jpeg" class="card-img img-fluid Post-card-img Post-card-l"
+            alt="Postcard Image">
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <div class="postcard_text t-dark">
+              <h1 class="postcard_title yellow"><a href="#" class="text-decoration-none text-muted ">Podcast Title</a>
+              </h1>
+              <div class="postcard_subtitle">
+                <time datetime="2024-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mx-1"></i>Mon, june 27th 2024
+                </time>
+              </div>
+              <div class="Post-card-line bg-success "></div>
+              <div class="postcard_preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                fugiat
+                asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+                accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci
+                illo
+                iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+              <ul class=" list-inline ">
+                <li class="list-inline-item m-4 btn btn-outline-secondary  "><i class="fas fa-tag mx-1"></i>Podcast</li>
+                <li class="list-inline-item m-4 btn btn-outline-secondary  "><i class="fas fa-clock mx-1"></i>55 mins.
+                </li>
+                <li class="list-inline-item m-4 btn btn-outline-secondary   play yellow">
+                  <a href="#" style="display: contents;" class="text-body "><i class="fas fa-play mx-1 "></i>Play
+                    Episode</a>
+                </li>
+              </ul>
+            </div><!-- card-body -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container   mt-2">
+    <div class="card Post-card overflow-hidden  my-5">
+      <div class="row flex-row-reverse  no-gutters Post-card-r-bg-gradient">
+        <div class="col-md-3">
+          <img src="images/main/pexels-tirachard-kumtanom-733856.jpg"
+            class="card-img img-fluid Post-card-img Post-card-r" alt="Postcard Image Post-card-r">
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <div class="postcard_text t-dark">
+              <h1 class="postcard_title yellow"><a href="#" class="text-decoration-none text-muted">Podcast Title</a>
+              </h1>
+              <div class="postcard_subtitle">
+                <time datetime="2024-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mx-1"></i>Mon, june 27th 2024
+                </time>
+              </div>
+              <div class="Post-card-line bg-warning "></div>
+              <div class="postcard_preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                fugiat
+                asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+                accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci
+                illo
+                iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+              <ul class=" list-inline ">
+                <li class="list-inline-item m-4 btn btn-outline-secondary  "><i class="fas fa-tag mx-1"></i>Podcast</li>
+                <li class="list-inline-item m-4 btn btn-outline-secondary  "><i class="fas fa-clock mx-1"></i>55 mins.
+                </li>
+                <li class="list-inline-item m-4 btn btn-outline-secondary   play yellow">
+                  <a href="#" style="display: contents;" class="text-body "><i class="fas fa-play mx-1 "></i>Play
+                    Episode</a>
+                </li>
+              </ul>
+            </div><!-- card-body -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  -->
+
+  <div class="container-fluid mt-5 py-3 border border-black   text-bg-light  text-center title-section"
+    style="background-color: rgba(119, 119, 119, 0.123);">
+    <h2 class=" text-capitalize " style="font-size: 2.5rem;"><strong class="text-info ">S</strong>ervices <strong
+        class="text-info ">w</strong>e <strong class="text-info ">o</strong>ffer <strong class="text-info ">f</strong>or
+      <strong class="text-info ">y</strong>ou
+    </h2>
+    <div class="Post-card-line"></div>
+  </div>
+  <div class="container mb-5 mt-1 ">
+    <div class="row">
+      <div class="container-fluid row justify-content-around  ">
+        <!-- Freelancing -->
+        <div class="col-sm-12 col-md-6 col-lg-4  my-3">
+          <div class="card Services-Offer">
+            <img src="images/main/card/freelancer.jpg" class="card-img-top p-2  " style="width: 100%;; height: 300px;"
+              alt="Freelancing">
+            <div class="card-body text-center">
+              <h5 class="card-title">Freelancing</h5>
+              <a href="#" class=" text-decoration-none card-link text-secondary d-block  "><i
+                  class="bi bi-briefcase-fill my-2 "></i> Freelancing Page</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/gmail-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="gmail"></a>
+              <a href="#" class=" text-decoration-none btn btn-outline-secondary  btn-block join-button my-2">Join
+                Community</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/discord-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="discord"></a>
+
+            </div>
+          </div>
+        </div>
+        <!-- Remote Work -->
+        <div class="col-sm-12 col-md-6 col-lg-4  my-3">
+          <div class="card Services-Offer">
+            <img src="images/main/card/freelancers.jpg" class="card-img-top p-2  " style="width: 100%;; height: 300px;"
+              alt="Remote Work">
+            <div class="card-body text-center">
+              <h5 class="card-title">Remote Work</h5>
+              <a href="#" class=" text-decoration-none card-link text-secondary d-block d-block "><i
+                  class="bi bi-briefcase-fill my-2 "></i> Remote Work Page</a>
+
+              <a href="#" class="mx-2"><img src="images/svg/card-link/gmail-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="gmail"></a>
+              <a href="#" class=" text-decoration-none btn btn-outline-secondary  btn-block join-button my-2">Join
+                Community</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/discord-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="discord"></a>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- E-Learning -->
+        <div class="col-sm-12 col-md-6 col-lg-4  my-3">
+          <div class="card Services-Offer">
+            <img src="images/main/card/Learning.jpg" class="card-img-top p-2  " style="width: 100%;; height: 300px;"
+              alt="E-Learning">
+            <div class="card-body text-center">
+              <h5 class="card-title">E-Learning</h5>
+              <a href="#" class=" text-decoration-none card-link text-secondary d-block "><i
+                  class="bi bi-briefcase-fill my-2 "></i> E-Learning Page</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/gmail-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="gmail"></a>
+              <a href="#" class=" text-decoration-none btn btn-outline-secondary  btn-block join-button my-2">Join
+                Community</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/discord-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="discord"></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid row justify-content-around   ">
+        <!-- E-Commerce -->
+        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+          <div class="card Services-Offer">
+            <img src="images/main/card/Commerce.jpg" class="card-img-top p-2  " style="width: 100%;; height: 300px;"
+              alt="E-Commerce">
+            <div class="card-body text-center">
+              <h5 class="card-title">E-Commerce</h5>
+              <a href="#" class=" text-decoration-none card-link text-secondary d-block "><i
+                  class="bi bi-briefcase-fill my-2 "></i> E-Commerce Page</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/gmail-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="gmail"></a>
+              <a href="#" class=" text-decoration-none btn btn-outline-secondary  btn-block join-button my-2">Join
+                Community</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/discord-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="discord"></a>
+
+            </div>
+          </div>
+        </div>
+        <!-- Cryptocurrency Investment -->
+        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+          <div class="card Services-Offer">
+            <img src="images/main/card/Investment.jpg" class="card-img-top p-2   " style="width: 100%;; height: 300px;"
+              alt="Cryptocurrency Investment">
+            <div class="card-body text-center">
+              <h5 class="card-title"> Investment</h5>
+              <a href="#" class=" text-decoration-none card-link text-secondary d-block "><i
+                  class="bi bi-briefcase-fill my-2 "></i> Cryptocurrency Investment</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/gmail-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="gmail"></a>
+              <a href="#" class=" text-decoration-none btn btn-outline-secondary  btn-block join-button my-2">Join
+                Community</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/discord-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="discord"></a>
+
+            </div>
+          </div>
+        </div>
+        <!-- Digital Marketing -->
+        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+          <div class="card Services-Offer">
+            <img src="images/main/card/Marketin.jpg" class="card-img-top p-2  " style="width: 100%;; height: 300px;"
+              alt="Digital Marketing">
+            <div class="card-body text-center">
+              <h5 class="card-title">Digital Marketing</h5>
+              <a href="#" class=" text-decoration-none card-link text-secondary d-block "><i
+                  class="bi bi-briefcase-fill my-2 "></i> Digital Marketing Page</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/gmail-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="gmail"></a>
+              <a href="#" class=" text-decoration-none btn btn-outline-secondary  btn-block join-button my-2">Join
+                Community</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/discord-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="discord"></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid row  justify-content-evenly   ">
+        <!-- Graphic Design -->
+        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+          <div class="card Services-Offer">
+            <img src="images/main/card/graphic_design.jpg" class="card-img-top p-2  "
+              style="width: 100%;; height: 300px;" alt="Graphic Design">
+            <div class="card-body text-center">
+              <h5 class="card-title">Graphic Design</h5>
+              <a href="#" class=" text-decoration-none card-link text-secondary d-block "><i
+                  class="bi bi-briefcase-fill my-2 "></i> Graphic Design Page</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/gmail-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="gmail"></a>
+              <a href="#" class=" text-decoration-none btn btn-outline-secondary  btn-block join-button my-2">Join
+                Community</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/discord-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="discord"></a>
+
+            </div>
+          </div>
+        </div>
+        <!-- Web Development -->
+        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+          <div class="card Services-Offer">
+            <img src="images/main/card/Web Development.jpg" class="card-img-top p-2   "
+              style="width: 100%;; height: 300px;" alt="Web Development">
+            <div class="card-body text-center">
+              <h5 class="card-title">Web Development</h5>
+              <a href="#" class=" text-decoration-none card-link text-secondary d-block "><i
+                  class="bi bi-briefcase-fill my-2 "></i> Web Development Page</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/gmail-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="gmail"></a>
+              <a href="#" class=" text-decoration-none btn btn-outline-secondary  btn-block join-button my-2">Join
+                Community</a>
+              <a href="#" class="mx-2"><img src="images/svg/card-link/discord-svgrepo-com.svg" class="card-svg"
+                  style="height: 25px; width: 25px;" alt="discord"></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+  <div class="container my-5">
+    <!-- Section Title -->
+    <h2 class="section-title text-capitalize  text-bg-secondary   text-center ">Guidance for Freelancing and Personal
+      Development</h2>
+    <div class="Post-card-line form-line bg-secondary  m-auto "></div>
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-4 my-3 Card-Hover">
+        <div class="card bg-dark text-white border-0 Card-Hover-Img">
+          <img src="images/main/card-1.jpg" class="card-img" alt="Card 1 Image">
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+            <div class="d-flex align-items-center mb-3">
+              <img src="images/main/card-1.jpg" alt="Thumbnail 1" class="circle-img mr-3">
+              <div>
+                <h5 class="card-title">Freelancing Tips</h5>
+                <p class="card-text text-bg-light text-light-emphasis " style="font-size: 0.9rem;">Discover valuable
+                  tips for successful freelancing and managing your projects efficiently.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4 my-3 Card-Hover">
+        <div class="card bg-dark text-white border-0 Card-Hover-Img">
+          <img src="images/main/card-2.jpg" class="card-img" alt="Card 2 Image">
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+            <div class="d-flex align-items-center mb-3">
+              <img src="images/main/card-2.jpg" alt="Thumbnail 2" class="circle-img mr-3">
+              <div>
+                <h5 class="card-title">Remote Work Insights</h5>
+                <p class="card-text text-bg-light text-light-emphasis ">Gain insights into remote work strategies and
+                  maintaining productivity from home.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-12 col-lg-4 my-3 Card-Hover">
+        <div class="card bg-dark text-white border-0 Card-Hover-Img">
+          <img src="images/main/card-3.jpg" class="card-img" alt="Card 3 Image">
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+            <div class="d-flex align-items-center mb-3">
+              <img src="images/main/card-3.jpg" alt="Thumbnail 3" class="circle-img mr-3">
+              <div>
+                <h5 class="card-title">E-Learning Resources</h5>
+                <p class="card-text text-bg-light text-light-emphasis ">Explore a variety of resources and tools for
+                  effective online learning and skill development.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Form Section -->
+
+  <section class="container my-5 ">
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="form-section bg-gradient-form-cv border  border-light shadow-lg   ">
+          <img src="images/svg/cv-svgrepo-com.svg" class="img-fluid" style="max-width: 3rem; height: 3rem"
+            alt="cv-svgrepo">
+          <h2 class="text-center mb-4"> Submit Your CV </h2>
+          <div class="Post-card-line form-line bg-secondary  m-auto "></div>
+
+          <form>
+            <div class="form-group  my-3">
+              <label for="fullName">Full Name</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                </div>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+              </div>
+            </div>
+            <div class="form-group my-3 ">
+              <label for="email">Email Address</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                </div>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+              </div>
+            </div>
+            <div class="form-group my-3">
+              <label for="phone">Phone Number</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                </div>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+              </div>
+            </div>
+            <div class="form-group my-3">
+              <label for="specialty">Online Work Specialty</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="bi bi-briefcase-fill"></i></span>
+                </div>
+                <select class="form-control" id="specialty" required>
+                  <option value="" disabled selected>Select your specialty</option>
+                  <option value="freelancing">Freelancing</option>
+                  <option value="remote_work">Remote Work</option>
+                  <option value="online_teaching">Online Teaching</option>
+                  <option value="e_commerce">E-commerce</option>
+                  <option value="digital_marketing">Digital Marketing</option>
+                  <option value="content_creation">Content Creation</option>
+                  <option value="web_development">Web Development</option>
+                  <option value="graphic_design">Graphic Design</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group my-3">
+              <label for="cv">Upload CV</label>
+              <div class="input-group my-2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="bi bi-file-earmark-arrow-up-fill"></i></span>
+                </div>
+                <input type="file" class="form-control-file mx-2" id="cv" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-secondary  btn-block">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  -->
+
+
+
+  <div class="container bg-dark text-light rounded py-2 my-2 ">
+    <h1 class="text-center  py-4">Translate From <span class="text-decoration-underline "> Arabic </span> To Greek</h1>
+
+    <div class="container my-2 bg-body  rounded border border-secondary shadow-sm">
+      <p class="h3 d-inline text-dark  ">Write And Translate</p>
+      <a href="#" class="text-black-50   h4">Press Here</a>
+
+      <button type="button" class="btn  btn-secondary   d-lg-block my-4" data-bs-toggle="modal" data-bs-target="#myModal1"
+        title="copy it!">
+        copy
+      </button>
+      <!-- The Modal -->
+      <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+          <div class="modal-content text-dark ">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">copied</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              copy completed successfully
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">ok</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="form-floating text-muted ">
+        <textarea class="form-control comment-5 t-area my-2 " id="comment" name="text"
+          placeholder="Comment goes here"></textarea>
+        <label for="comment">Write And Translate</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-dark text-light rounded py-2 my-2    ">
+    <h1 class="text-center  py-4">Translate From <span class="text-decoration-underline "> English </span> To Greek
+    </h1>
+
+    <div class="container my-2 bg-body  rounded border border-secondary shadow-sm">
+      <p class="h3 d-inline text-dark  ">Write And Translate</p>
+      <a href="#" class="text-black-50   h4">Press Here</a>
+
+      <button type="button" class="btn btn-secondary  d-lg-block my-4" data-bs-toggle="modal" data-bs-target="#myModal1"
+        title="copy it!">
+        copy
+      </button>
+
+      <div class="form-floating text-muted  shadow-sm">
+        <textarea class="form-control comment-5 shadow-sm my-2 " id="comment" name="text"
+          placeholder="Comment goes here"></textarea>
+        <label for="comment">Write And Translate</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-dark text-light rounded py-2 my-2   mb-4">
+    <h1 class="text-center  py-4">Translate From <span class="text-decoration-underline "> Germany</span> To Greek </h1>
+
+    <div class="container my-2 bg-body  rounded border border-secondary shadow-sm">
+      <p class="h3 d-inline-block text-dark ">Write And Translate</p>
+      <a href="#" class="text-black-50   h4">Press Here</a>
+
+      <button type="button" class="toast-body btn btn-secondary  d-lg-block my-4" data-bs-toggle="modal"
+        data-bs-target="#myModal1" title="copy it!">
+        copy
+      </button>
+      <!-- The Modal -->
+
+      <div class="form-floating text-muted ">
+        <textarea class="form-control comment-5 shadow-sm my-2 " id="comment" name="text"
+          placeholder="Comment goes here"></textarea>
+        <label for="comment">Write And Translate</label>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+  <!--  -->
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-4">
+    <div class="container text-md-left">
+      <div class="row text-md-left">
+        <!-- About Us Section -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase text-info mb-4 font-weight-bold">About Us</h5>
+          <p>Learn more about our mission, values, and the team that makes it all possible.</p>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase text-info mb-4 font-weight-bold">Contact Us</h5>
+          <p><i class="bi bi-envelope-fill mr-3"></i> OMRAN.WEBDEVELOPER@GMAIL.COM</p>
+          <p><i class="bi bi-phone-fill mr-3"></i> + 357 962 467 61</p>
+          <p><i class="bi bi-phone-fill mr-3"></i> + 357 962 467 61</p>
+        </div>
+
+        <!-- Useful Links Section -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase text-info mb-4 font-weight-bold">Follow Us On</h5>
+          <p><a href="#" class="text-light" style="text-decoration: none;">Home</a></p>
+          <p><a href="#" class="text-light" style="text-decoration: none;">About</a></p>
+          <p><a href="#" class="text-light" style="text-decoration: none;">Services</a></p>
+          <p><a href="#" class="text-light" style="text-decoration: none;">Contact</a></p>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase text-info mb-4 font-weight-bold">Subscribe</h5>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control mb-3" placeholder="Enter your email">
+              <button type="submit" class="btn btn-outline-light ">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr class="mb-4">
+
+      <!-- Footer Bottom -->
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-8">
+          <p class="text-left text-light">© 2024 Your Website. All rights reserved.</p>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-facebook" style="font-size: 1.25rem;">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-twitter" style="font-size: 1.25rem;">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-linkedin" style="font-size: 1.25rem;">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-instagram" style="font-size: 1.25rem;">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
